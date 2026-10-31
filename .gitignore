@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Notebook
+.ipynb_checkpoints/
+
+# 模型权重与数据（本仓库不收录任何第三方权重/数据）
+*.pt
+*.pth
+*.onnx
+*.engine
+*.rknn
+*.tflite
+*.bin
+*.safetensors
+datasets/
+weights/
+runs/
+
+# 构建产物
+dist/
+build/
+site/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 系统
+.DS_Store
+Thumbs.db
