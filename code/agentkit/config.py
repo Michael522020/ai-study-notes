@@ -1,7 +1,7 @@
 """运行期配置与预算闸门。
 
 所有配置来自环境变量；`Settings.from_env()` 在缺少 API key 时**不**降级为假 provider，
-而是让调用方显式选择 `ScriptedProvider`（离线替身）。理由见 05-Agent与智能体/01 章
+而是让调用方显式选择 `ScriptedProvider`（离线替身）。理由见 07-Agent与智能体/01 章
 「失败语义要显式」一节：缺配置返回 not_configured，而不是悄悄走 fake。
 """
 
@@ -11,7 +11,7 @@ import os
 from dataclasses import dataclass, field
 from pathlib import Path
 
-# 默认模型：Claude Opus 5.5（见 05 章「模型选型与成本」）
+# 默认模型：Claude Opus 5.5（见 07 章「模型选型与成本」）
 DEFAULT_MODEL = "claude-opus-5-5"
 # 便宜档：Claude Haiku 5.5，用于分类 / 抽取 / 改写这类窄任务
 CHEAP_MODEL = "claude-haiku-5-5"

@@ -171,7 +171,7 @@ class SuperAgent:
         生产上更好的两个选择：
         1. 服务端压缩（Compaction beta，API 侧自动摘要历史并回传 compaction 块）；
         2. 让模型自己写摘要再替换历史（多一次调用，质量更好）。
-        笔记 05 章「上下文治理」一节有取舍表。
+        笔记 07 章「上下文治理」一节有取舍表。
         """
         keep_last = keep_last if keep_last is not None else self.profile.compact_keep_last
         if len(messages) <= keep_last + 1:
