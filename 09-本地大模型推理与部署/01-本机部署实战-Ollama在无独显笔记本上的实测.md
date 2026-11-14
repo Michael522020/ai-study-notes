@@ -25,13 +25,18 @@
 irm https://ollama.com/install.ps1 | iex
 
 # 2) 【关键】手动起服务，让核显生效
-set OLLAMA_IGPU_ENABLE=1
+#    Git Bash:      export OLLAMA_IGPU_ENABLE=1
+#    PowerShell:   $env:OLLAMA_IGPU_ENABLE = "1"
+#    cmd:          set OLLAMA_IGPU_ENABLE=1
 ollama.exe serve
 
 # 3) 另开一个终端拉模型、跑模型
 ollama pull qwen3:4b
 ollama run qwen3:4b
 ```
+
+> ⚠️ **变量必须设在「起服务的那个终端」里。** 用托盘 App 或开机自启项拉起服务时，
+> 那个进程的父环境里没有这个变量——这正是 §3.2 那个坑的成因。
 
 ---
 
