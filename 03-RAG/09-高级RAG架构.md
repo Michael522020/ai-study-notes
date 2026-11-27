@@ -138,6 +138,8 @@ HotpotQA / TriviaQA / PubHealth 上超过固定检索的 RAG，尤其在**多跳
 **仓库**：`microsoft/graphrag`
 **官方文档**：https://microsoft.github.io/graphrag/
 
+> 📌 **本节是概览。** 索引流水线的逐环节拆解、三种查询模式的机制、成本模型、LazyGraphRAG 的降本方案、以及「图 RAG 什么时候是负收益」的完整分析，见专题 → [`15-GraphRAG专题.md`](./15-GraphRAG专题.md)
+
 ### 3.2 它解决什么问题
 
 **标准 RAG 适合**：**局部查询**（"报销流程是什么？"）
